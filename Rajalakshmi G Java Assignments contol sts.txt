@@ -1,0 +1,135 @@
+Rajalakshmi G
+Associate Software Engineer - QA COE 
+
+1.Selection statements
+=======================
+package com.statements;
+
+public class selection_statements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int var1=5;
+		int var2=6;
+		if((var2=1)==var1)
+		{
+			System.out.println(var2);
+		}
+		else
+		{
+			System.out.println(++var2);
+		}
+
+	}
+
+}
+
+output
+======
+3
+
+2.comma operator
+================
+package com.statements;
+
+public class Comma_op {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		for(int i=0,j=0;i<5 && j<5;++i,j=i+1)
+		{
+			sum+=i;
+			
+		}
+		System.out.println(sum);
+
+	}
+
+}
+
+output
+======
+6
+
+3.Jump Statements
+==================
+package com.statements;
+
+public class Jump_Statement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=2;
+		int y=0;
+		for(;y<10;++y)
+		{
+			if(y%x==0)
+				continue;
+			else if(y==8)
+				break;
+			else
+				System.out.print(y+" ");
+		}
+
+	}
+
+}
+output
+======
+1 3 5 7 9
+
+4.Hello world 
+==============
+package com.statements;
+
+public class Hellodemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final int a=10,b=20;
+		while(a<b)
+		{
+			System.out.println("Hello");
+		}
+		System.out.println("World");
+
+	}
+
+}
+
+Output
+======
+Run time Error
+
+5.Break
+========
+package com.statements;
+
+public class BreakExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=5;
+		int b=10;
+		first:
+		{
+			second:
+			{
+				third:
+				{
+					if(a==b>>1)
+						break second;
+				}
+				System.out.println(a);
+			}
+			System.out.println(b);
+		}
+
+	}
+
+}
+
+Output
+======
+10
